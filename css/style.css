@@ -1,0 +1,290 @@
+@keyframes border__efeito__menu {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #7cb0dab3;
+}
+header {
+    background: #7CAFDA;
+    width: 100%;
+    height: 100px;
+    transition: height 0.5s;
+    position: fixed;
+    z-index: 1;
+}
+.center {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.logo img {
+    width: 100%;
+}
+.nav {
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 100px;
+    display: none;
+}
+.bar {
+    margin-left: auto;
+}
+.bar i {
+    font-size: 22px;
+    cursor: pointer;
+}
+nav {
+    width: 100%;
+    height: 100%;
+}
+.nav nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+.nav nav ul li {
+    margin: 2px 0;
+    height: 30px;
+}
+.nav nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.nav nav ul li a:hover::after {
+    content: '';
+    display: block;
+    border-radius: 10px;
+    width: 0;
+    height: 2px;
+    background: black;
+    animation: border__efeito__menu 300ms linear;
+    animation-fill-mode: forwards;
+}
+.banner {
+    position: relative;
+    overflow-x: hidden;
+    top: 70px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    transform: translate(-1%, -50%);
+}
+.arrow i {
+    font-size: 25px;
+    cursor: pointer;
+}
+.banner .form {
+    transition: all 1s;
+    width: 100%;
+    height: 440px;
+    max-width: 450px;
+    position: absolute;
+    top: 130px;
+    right: -438px;
+    background: rgba(113, 188, 171, 0.67);
+}
+.form form .titulo__form {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.titulo__form span {
+    font-weight: bold;
+    font-size: 22px;
+    width: 85%;
+}
+.inputs__form {
+    padding: 20px 40px 20px 40px;
+}
+.inputs__form div {
+    margin-bottom: 10px;
+    height: 50px;
+}
+.inputs__form div input[type=text],
+.inputs__form div input[type=email] {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+.inputs__form div span {
+    font-size: 13px;
+    color: red;
+    display: none;
+}
+.inputs__form div input::placeholder {
+    color: black;
+}
+.inputs__form div input[type=text]:hover,
+.inputs__form div input[type=email]:hover {
+    border-color: white;
+    transition: all 0.5s;
+}
+.enviar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enviar input {
+    background: transparent;
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.enviar input:hover {
+    background: black;
+    transition: all 0.4s;
+}
+.call__center {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.text__turismo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text__turismo h2 {
+    font-size: 30px;
+}
+.call {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.call__center .call div {
+    width: 30%;
+    text-align: center;
+}
+.call__center .call div img {
+    width: 60%;
+}
+.call__center .call div p {
+    font-size: 25px;
+}
+.quadro {
+    width: 100%;
+}
+.divisao__quadros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.divisao__quadros div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.divisao__quadros div img {
+    width: 100%;
+    border-radius: 15px;
+}
+.quadro2 {
+    flex-direction: row-reverse;
+}
+.divisao__quadros div div:last-child {
+    padding: 10px;
+}
+.divisao__quadros div p {
+    font-size: 22px;
+}
+.form__sub {
+    transition: all 0.5s;
+}
+footer {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+@media screen and (min-width: 937px) {
+    .banner .form {
+        top: 50% !important;
+        transform: translate(0, -50%);
+    }
+    .form__sub {
+        height: auto;
+    }
+}
+@media screen and (max-width: 937px) {
+    .banner .form {
+        position: relative;
+        left: 50%;
+        top: -440px;
+        transform: translate(-50%, 0);
+    }
+    .banner .form .arrow {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form__sub {
+        overflow: hidden;
+        padding: 20px 0;
+        position: relative;
+        height: 50px;
+    }
+    .call__center .call {
+        flex-direction: column;
+        align-items: center;
+    }
+    .call__center .call div {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .call__center .call p {
+        width: 100%;
+    }
+    .call__center .call img {
+        width: 20% !important;
+    }
+    .quadro1,
+    .quadro2 {
+        flex-direction: column;
+    }
+    .banner .form__sub .form .titulo__form {
+        height: 130px;
+    }
+}

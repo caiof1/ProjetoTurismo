@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA Turismo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/55d1d6210d.js" crossorigin="anonymous"></script>
+</head>
+<body onresize="ChangeResolution()">
+
+    <header id="head">
+        <div class="center">
+            <div class="header">
+                <div class="logo">
+                    <img src="img/img-logo.png" alt="">
+                </div>
+
+                <div class="bar">
+                    <i class="fa-solid fa-bars" onclick="ChangeStateMenu()"></i>
+                </div>
+
+                <div class="nav" id="nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="">Contato</a>
+                            </li>
+                            <li>
+                                <a href="">Ajuda</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="center">
+            <div class="banner">
+                <img src="img/img-paisagem.jpg" width="100%" alt="">
+
+                <div class="form__sub" id="form__sub">    
+                    <div class="form" id="form">
+                        <div class="arrow" id="arrow">
+                            <i class="fa-solid fa-circle-arrow-left arrow_i" onclick="ModificarStatusForm()"></i>
+                        </div>
+                        <form action="">
+                            <div class="titulo__form">
+                                <span>Envie seus dados aqui, para entrarmos em contato e conversarmos melhor</span>
+                            </div>
+                            <div class="inputs__form">
+                                <div class="nome">
+                                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                                    <span id="nome__invalido">*Dados invalidos*</span>
+                                </div>
+                                <div class="sobrenome">
+                                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                                    <span id="sobrenome__invalido">*Dados invalidos*</span>
+                                </div>
+                                <div class="email">
+                                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                                    <span id="email__invalido">*Dados invalidos*</span>
+                                </div>
+                                <div class="enviar">
+                                    <input type="submit" onclick="ValidarDados()" value="Enviar dados">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="call__center">
+                <div class="text__turismo">
+                    <h2>O melhor do turismo está aqui</h2>
+                </div>
+                <div class="call">
+                    <div>
+                        <img src="img/img-atendente.png" alt="">
+                        <p>Os melhores atendentes para fornecer o que você precisa para viajar com segurança e conforto</p>
+                    </div>
+                    <div>
+                        <img src="img/img-atendente.png" alt="">
+                        <p>Os melhores atendentes para fornecer o que você precisa para viajar com segurança e conforto</p>
+                    </div>
+                    <div>
+                        <img src="img/img-atendente.png" alt="">
+                        <p>Os melhores atendentes para fornecer o que você precisa para viajar com segurança e conforto</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="quadro">
+                <div class="divisao__quadros">
+                    <div class="quadro1">
+                        <div>
+                            <img src="img/img-paisagem.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quisquam quos accusantium similique soluta cupiditate numquam modi explicabo hic, animi aut labore itaque velit aliquam? Rerum a reiciendis consequatur amet! sit amet, consectetur adipisicing elit. Mollitia totam ex quos veniam culpa, provident, quia quibusdam sint dolore ab ea officiis ratione unde id eos beatae non expedita. Rerum?</p>
+                        </div>
+                    </div>
+                    <div class="quadro2">
+                        <div>
+                            <img src="img/img-paisagem.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos pariatur autem repudiandae, consectetur consequatur facilis quae ducimus! Illum odit, unde, ipsa sed aut quisquam nihil architecto perspiciatis quas, enim cum? adipisicing elit. Mollitia totam ex quos veniam culpa, provident, quia quibusdam sint dolore ab ea officiis ratione unde id eos beatae non expedita. Rerum?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+    </main>
+
+    <footer class="center">
+        <div>
+            <span>Caio FA Turismo</span>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
