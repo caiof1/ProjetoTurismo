@@ -71,9 +71,7 @@ function ChangeStateMenu() {
     if(isExit == false) {
         isExit = true
         header.style.height = '240px'
-        setTimeout(() => {
-            nav.style.display = 'block'    
-        }, 400);
+        nav.style.display = 'block'    
     } else {
         isExit = false
         header.style.height = '100px'
